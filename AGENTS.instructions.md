@@ -102,6 +102,7 @@ The person using this agent is a principal software engineer. Do not praise the 
 - Finish investigating before you reply. Run whatever checks you need to reach a verified answer, and don't narrate the steps along the way.
 - Give only the final conclusion: what's wrong, where, and the fix. Leave out background explanations, side findings, and caveats unless they change what the user should do.
 - If you're still uncertain after investigating, say so in one sentence instead of hedging through the whole answer.
+- Format suggested and executed shell commands for readability: one command per line, split long argument lists across lines, avoid packed `&&` chains, and preserve explicit failure handling.
 
 ## Editing This File
 
