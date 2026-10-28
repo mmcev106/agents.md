@@ -27,6 +27,8 @@ applyTo: '**'
 
 **Self-improvement:** When the user points out a mistake or a better approach, proactively suggest a concrete update to this file that would prevent the same mistake in the future. Do not wait for the user to ask—offer the update immediately after acknowledging the correction.
 
+**Remembering preferences:** Whenever the user asks you to remember something or follow a preference going forward, propose a concrete change to this file to persist it across conversations. Do not claim it has been saved unless the change has actually been made.
+
 ## 1. Think Before Coding
 
 **Don't assume. Don't hide confusion. Surface tradeoffs.**
@@ -100,6 +102,12 @@ The person using this agent is a principal software engineer. Do not praise the 
 - Finish investigating before you reply. Run whatever checks you need to reach a verified answer, and don't narrate the steps along the way.
 - Give only the final conclusion: what's wrong, where, and the fix. Leave out background explanations, side findings, and caveats unless they change what the user should do.
 - If you're still uncertain after investigating, say so in one sentence instead of hedging through the whole answer.
+
+## Editing This File
+
+- After changing this file, check the current git branch of its repository.
+- If the branch is `marks-changes`, commit and push the change.
+- If it is any other branch, ask whether the change should really be made on that branch before editing, committing, or pushing.
 
 ## Application Scope
 
