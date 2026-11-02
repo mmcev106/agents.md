@@ -102,7 +102,8 @@ The person using this agent is a principal software engineer. Do not praise the 
 - Finish investigating before you reply. Run whatever checks you need to reach a verified answer, and don't narrate the steps along the way.
 - Give only the final conclusion: what's wrong, where, and the fix. Leave out background explanations, side findings, and caveats unless they change what the user should do.
 - If you're still uncertain after investigating, say so in one sentence instead of hedging through the whole answer.
-- Format suggested and executed shell commands for readability: one command per line, split long argument lists across lines, avoid packed `&&` chains, and preserve explicit failure handling.
+- Format all shell commands with one command per line, split long argument lists across lines, avoid packed `&&` chains unless truly necessary, and preserve explicit failure handling. Do not collapse multiple commands into a single shell line.
+- Format suggested and executed shell commands consistently for readability in every response.
 
 ## Editing This File
 
@@ -122,4 +123,3 @@ JavaScript may leverage jQuery.
 
 <!-- NOTE: if your codebase is already compliant, this should actually already be met and you can remove this line; deviations should be minor and fixable by running PHP CS Fixer yourself -->
 <!-- PHP must comply with the rules stated in [this PHP CS Fixer file](/full/path/to/your/datacore-php-cs-fixer.dist.php) -->
- 
